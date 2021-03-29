@@ -1,0 +1,98 @@
+nav
+      {
+        box-shadow: 0 0px 61px -21px #ff6a00;
+      }
+      .light
+      {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        box-shadow: 0 0px 150px 10px #ff6a00;
+      }
+      address:after{
+      /* \40 es un código para escribir el caracter '@' */
+      content: " <nombre\40 dominio.com>";
+      } 
+      body
+      {
+        background: #F6F2E6;
+        color: #262F2A
+      }
+      .navbar-nav > li > a
+      {
+        color: #262F2A;
+      }
+      a{
+        color: #262F2A
+      }
+      a:hover{
+        color:  #415471
+      }
+      .logo-img
+      {
+        height: 50px
+      }
+      .quote
+      {
+        font-size: 45pt;
+        font-family: 'Dancing Script', cursive;
+      }
+      .line
+      {
+        margin-bottom: 2px;
+        border: 2px solid black;
+      }
+      .border {
+        background: #262F2A;
+        bottom: 0;
+        height: 3px;
+      }
+      .border.col-sm {
+        width: 60%;
+      }
+      .e-mail:before {
+            content: attr(data-website) "\0040" attr(data-user);
+            unicode-bidi: bidi-override;
+            direction: rtl;
+        }
+
+
+        @-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.rotating {
+  -webkit-animation: rotating 2s linear infinite;
+  -moz-animation: rotating 2s linear infinite;
+  -ms-animation: rotating 2s linear infinite;
+  -o-animation: rotating 2s linear infinite;
+  animation: rotating 2s linear infinite;
+}
